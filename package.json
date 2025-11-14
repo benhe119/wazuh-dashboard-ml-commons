@@ -5,12 +5,21 @@
     "id": "mlCommonsDashboards"
   },
   "version": "3.3.0.0",
+  "opensearchDashboards": {
+    "version": "3.3.0",
+    "templateVersion": "3.3.0"
+  },
+  "wazuh": {
+    "version": "5.0.0",
+    "revision": "00"
+  },
   "scripts": {
     "build": "yarn plugin-helpers build",
     "plugin-helpers": "node ../../scripts/plugin_helpers",
     "osd": "node ../../scripts/osd",
     "lint:es": "node ../../scripts/eslint",
     "test:jest": "../../node_modules/.bin/jest --config ./test/jest.config.js",
+    "test:jest:runner": "node scripts/runner test",
     "prepare": "husky install"
   },
   "dependencies": {},
